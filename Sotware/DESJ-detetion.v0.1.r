@@ -5,7 +5,7 @@
 
 ######################## Overview ########################
 
-# Description: DSJ-detection, a novel computation framework, is designed to address the main barriersin differential splicing
+# Description: DESJ-detection, a novel computation framework, is designed to address the main barriersin differential splicing
 #              between groups at single cell levels, such as technical noise and low coverage depth. It applies iterative K-means
 #              and a new normalization method to relieve the above diffculty. 
 #

@@ -16,7 +16,7 @@ library(edgeR)
 library(limma)
 library(parallel)
 library(pheatmap)
-source('./filter.low.exp.cell.1.1.r')
+source('./filter.cell.r')
 
 ##### get options
 

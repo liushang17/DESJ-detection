@@ -33,10 +33,15 @@ Options:
 ### Output: The junction list
 
 chr21_33547906_33549256_1
+
 chr2_151692363_151694322_2
+
 chr3_180985997_180986997_2
+
 chr3_37832939_37834678_2
+
 chr11_125653848_125655224_1
+
 chr3_123740002_123752330_2
 
 ## Junction.ann.pl
@@ -57,22 +62,33 @@ Usage:
 ### Output
 Alljunction.filter.list.ann.xls:
   Junction  GeneID    GeneName
+  
   chr2_151692363_151694322_2      ENSG00000183091.19      NEB
+  
   chr3_180985997_180986997_2      ENSG00000205981.6       DNAJC19
+  
   chr3_37832939_37834678_2        ENSG00000235257.8       ITGA9-AS1
+  
   chr11_125653848_125655224_1     ENSG00000149554.12      CHEK1
+  
   chr3_123740002_123752330_2      ENSG00000065534.18      MYLK
 
 Alljunction.filter.list.ann.onegene.xls:
   Junction  GeneID    GeneName
+  
   chr2_151692363_151694322_2      ENSG00000183091.19      NEB
+  
   chr3_180985997_180986997_2      ENSG00000205981.6       DNAJC19
+  
   chr3_37832939_37834678_2        ENSG00000235257.8       ITGA9-AS1
-  chr11_125653848_125655224_1     ENSG00000149554.12      CHEK1
-  chr3_123740002_123752330_2      ENSG00000065534.18      MYLK
+
 merge.count.txt:
 cell    chr2_151692363_151694322_2      chr3_180985997_180986997_2      chr3_37832939_37834678_2
+
 P08_T_0976      0       0       0
+
 P15_A_0065      0       0       0
+
 P09_T_0669      0       0       0
+
 P09_T_1398      0       2       0

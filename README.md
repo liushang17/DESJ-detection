@@ -8,7 +8,7 @@ A computation framework designed to detect differential junctions usage between 
 2. a new normalization method, which normalize the read count per junction of each gene using the reads count aligned to all junctions of the gene rather than uniquely mapped reads in each cell. 
 3. DSJ-detection can detect differential junction in all positions of genes, so it can discover any pattern of alternative splicing.
 
-## Installation
+### Usage
 Just download it. To check that it can run perfectly, try the command with the help option (-h), Rscript DESJ-detection.v0.1.r  -h. The output should look like this:
 
 Usage: DESJ-detection.v0.1.r [options]
@@ -59,7 +59,7 @@ Options:
 ## About Plot.cell.filter.r
 This would output a heatmap file, showing the expression distribution of all junction of the selected genes across cell clusters determined by iterative K-means. 
 
-## Usage
+### Usage
 To check that it can run perfectly, try the command with the help option (-h), Rscript Plot.cell.filter.r  -h. The output should look like this:
 
 Usage: Plot.cell.filter.r [options]

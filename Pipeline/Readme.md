@@ -31,11 +31,17 @@ Options:
                 Show this help message and exit
 
 ### Output: The junction list
+
 chr21_33547906_33549256_1
+
 chr2_151692363_151694322_2
+
 chr3_180985997_180986997_2
+
 chr3_37832939_37834678_2
+
 chr11_125653848_125655224_1
+
 chr3_123740002_123752330_2
 
 ## Junction.ann.pl

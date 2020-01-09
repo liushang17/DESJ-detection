@@ -1,6 +1,6 @@
-# DSJ-detection:Differential splicing junction Detection between two groups at single cell level
+# DESJ-detection:Differential splicing junction Detection between two groups at single cell level
 
-## About DSJ-Detection
+## About DESJ-Detection
 
 
 A computation framework designed to detect differential junctions usage between two groups at single cell level. The software have three highlights:
@@ -9,9 +9,9 @@ A computation framework designed to detect differential junctions usage between 
 3. DSJ-detection can detect differential junction in all positions of genes, so it can discover any pattern of alternative splicing.
 
 ## Installation
-Just download it. To check that it can run perfectly, try the command with the help option (-h), Rscript second.DAS.2.2.r -h. The output should look like this:
+Just download it. To check that it can run perfectly, try the command with the help option (-h), Rscript DESJ-detection.v0.1.r  -h. The output should look like this:
 
-Usage: second.DAS.2.2.r [options]
+Usage: DESJ-detection.v0.1.r [options]
 
 Options:
 

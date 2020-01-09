@@ -61,6 +61,7 @@ Usage:
 
 ### Output
 Alljunction.filter.list.ann.xls:
+
   Junction  GeneID    GeneName
   
   chr2_151692363_151694322_2      ENSG00000183091.19      NEB
@@ -74,6 +75,7 @@ Alljunction.filter.list.ann.xls:
   chr3_123740002_123752330_2      ENSG00000065534.18      MYLK
 
 Alljunction.filter.list.ann.onegene.xls:
+
   Junction  GeneID    GeneName
   
   chr2_151692363_151694322_2      ENSG00000183091.19      NEB
@@ -83,6 +85,7 @@ Alljunction.filter.list.ann.onegene.xls:
   chr3_37832939_37834678_2        ENSG00000235257.8       ITGA9-AS1
 
 merge.count.txt:
+
 cell    chr2_151692363_151694322_2      chr3_180985997_180986997_2      chr3_37832939_37834678_2
 
 P08_T_0976      0       0       0

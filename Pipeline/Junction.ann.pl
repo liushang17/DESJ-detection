@@ -64,7 +64,7 @@ my @juncinfo;
 while (<AS>){
         chomp;
 	if ($. == 1){
-		print All "junction_id,GeneID,GeneName\n";
+		print All "junction_id\tGeneID\tGeneName\n";
 		next;
 	}
 	if($_ =~ /chr/){
@@ -168,37 +168,42 @@ foreach(keys %moregene){
 }
 close O2;
 
-print "cell";
+open O,">$ARGV[3]/merge.count.txt" or die "$!";
+print O "cell";
 foreach(@junc){
-        print "\t$_";
+        print O "\t$_";
 }
-print "\n";
+print O "\n";
 
 opendir I1,$ARGV[2] or die "$!";
-open O,">$ARGV[3]/merge.count.txt" or die "$!";
+
 foreach(readdir I1){
         chomp;
         next if($_ eq "\." or $_ eq "\.\.");
-        my $file = "$ARGV[3]/$_/$_"."SJ.out.tab";
-	open I2,$file or die "$!";
-        my %sj_num;
-        foreach my $line (<I2>){
-                chomp($line);
-                my @word = split " ",$line;
-                my $sj = $word[0]."_".$word[1]."_".$word[2]."_".$word[3];
-                my $num = $word[6];
-                $sj_num{$sj} = $num;
-        }
-        close I2;
-        print "$_";
-        foreach my $junc(@junc){
-                if(exists $sj_num{$junc}){
-                        print O "\t$sj_num{$junc}";
-                }else{
-                        print O "\t0";
-                }
-        }
-        print "\n";
+        my $file = "$ARGV[2]/$_/$_"."SJ.out.tab";
+	if(-e $file){
+		open I2,$file or die "$!";
+        	my %sj_num;
+        	foreach my $line (<I2>){
+                	chomp($line);
+                	my @word = split " ",$line;
+                	my $sj = $word[0]."_".$word[1]."_".$word[2]."_".$word[3];
+                	my $num = $word[6];
+                	$sj_num{$sj} = $num;
+        	}
+        	close I2;
+        	print O "$_";
+        	foreach my $junc(@junc){
+                	if(exists $sj_num{$junc}){
+                        	print O "\t$sj_num{$junc}";
+                	}else{
+                        	print O "\t0";
+                	}
+        	}
+        	print O "\n";
+	}else{
+		print "$file\n";
+	}
 }
 closedir I1;
 close O;

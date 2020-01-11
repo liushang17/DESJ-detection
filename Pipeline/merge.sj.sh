@@ -1,1 +1,1 @@
-Rscript merge.sj.r --sj.dir <sj.dir> --outdir <outdir> --cpu 4 --min.cell 10 --min.read 4
+Rscript merge.sj.r --sj_dir <sj.dir> --outdir <outdir> --cpu 4 --min_cell 10 --min_read 4

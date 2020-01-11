@@ -103,6 +103,7 @@ clu2.mincell <- length(pos) * min.pct
 clu.mincell <- clu1.mincell
 if(clu1.mincell > clu2.mincell){clu.mincell <- clu2.mincell}
 
+system(paste("mkdir -p",outdir,sep = " "))
 ## find the gene
 ann1 <- ann
 frq <- data.frame(table(as.character(ann1$V3)))

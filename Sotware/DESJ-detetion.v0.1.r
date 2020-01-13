@@ -369,7 +369,7 @@ for(i in 1:length(genefilter)){
   colann_filter <- colann[-pos,]
   pos <- which(colnames(mattmp) %in% colann_filter$allcell)
   mat_filter = mattmp[,pos]
-  hgroup <- data.frame(clu=c(rep('used',length(colnames(mat_used))),rep('filter',length(colnames(mat_filter)))))
+  hgroup <- data.frame(clu=c(rep(clus[1],length(colnames(mat_used))),rep(clus[2],length(colnames(mat_filter)))))
   mat_h <- cbind(mat_used,mat_filter)
   rownames(hgroup) <- colnames(mat_h)
   pdfname <- paste(outdir,x,sep = '/')

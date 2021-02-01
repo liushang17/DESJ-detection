@@ -6,7 +6,20 @@
 A computation framework designed to detect differential junctions usage between two groups at single cell level. The software have three highlights:
 1. iterative K-means to discern cells failing to reflect the real junctions count distribution of each gene due to low expression and technical noise. 
 2. a new normalization method, which normalize the read count per junction of each gene using the reads count aligned to all junctions of the gene rather than uniquely mapped reads in each cell. 
-3. DSJ-detection can detect differential junction in all positions of genes, so it can discover any pattern of alternative splicing.
+3. DESJ-detection can detect differential junction in all positions of genes, so it can discover any pattern of alternative splicing.
+
+## Requirements
+optparse
+ggplot2
+parallel
+pheatmap
+edgeR
+limma
+
+## Release
+
+### Release v2.0.5
+Initial release of DESJ-detection
 
 ### Usage
 Just download it. To check that it can run perfectly, try the command with the help option (-h), Rscript DESJ-detection.v0.1.r  -h. The output should look like this:

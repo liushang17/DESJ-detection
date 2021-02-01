@@ -21,7 +21,7 @@ limma
 ### Release v2.0.5
 Initial release of DESJ-detection
 
-### Usage
+## Usage
 Just download it. To check that it can run perfectly, try the command with the help option (-h), Rscript DESJ-detection.v0.1.r  -h. The output should look like this:
 
 Usage: DESJ-detection.v0.1.r [options]
@@ -69,10 +69,10 @@ Options:
         -h, --help
                 Show this help message and exit
 
-## About Plot.cell.filter.r
+### About Plot.cell.filter.r
 This would output a heatmap file, showing the expression distribution of all junction of the selected genes across cell clusters determined by iterative K-means. 
 
-### Usage
+### Check
 To check that it can run perfectly, try the command with the help option (-h), Rscript Plot.cell.filter.r  -h. The output should look like this:
 
 Usage: Plot.cell.filter.r [options]
